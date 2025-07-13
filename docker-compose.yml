@@ -1,0 +1,7 @@
+services:
+  nginx-server-static-repo:
+    build: .
+    container_name: nginx-server-static-repo
+    ports:
+      - "8282:80"
+    restart: unless-stopped
